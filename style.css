@@ -1,8 +1,31 @@
-/*
 
-Teste de Folha
 
-*/
+
+/* CSS Reset */
+*{
+
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+/* Importacao Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+/* Layout */
+.container{
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+
+
 
 
 @media (min-width: 576px) {
@@ -10,7 +33,9 @@ Teste de Folha
     body{
         background-color: blue;
     }
-
+    .container{
+        max-width: 540px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -18,13 +43,18 @@ Teste de Folha
     body{
         background-color: rgb(33, 196, 47);
     }
-
+    .container{
+        max-width: 720px;
+    }
 }
 
 @media (min-width: 992px) {
     
     body{
         background-color: rgb(235, 112, 12);
+    }
+    .container{
+        max-width: 960px;
     }
 
 }
@@ -33,6 +63,9 @@ Teste de Folha
     
     body{
         background-color: rgb(184, 19, 19);
+    }
+    .container{
+        max-width: 1140px;
     }
 
 }
