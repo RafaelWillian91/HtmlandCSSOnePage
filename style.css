@@ -21,18 +21,72 @@ body{
 /* Layout */
 .container{
     margin: 0 auto;
-    background-color: aqua;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Topo do site */
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Cabeçalho */
+header{
+    height: 60px;
+    background-color: darkblue;
+}
+
+#logo img{
+    width: 128px;
+    height: 128px;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ ul{
+    right: 0px;
+}
+
+label{
+    font-size: 3em;
+    padding-right: 15px;
+}
+
+nav ul{
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: 0.5s;
 }
 
 
 
+nav ul li{
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
 
 
+/* Smartphone LandScape */
 @media (min-width: 576px) {
     
-    body{
-        background-color: blue;
-    }
+    
     .container{
         max-width: 540px;
     }
@@ -40,9 +94,7 @@ body{
 
 @media (min-width: 768px) {
     
-    body{
-        background-color: rgb(33, 196, 47);
-    }
+   
     .container{
         max-width: 720px;
     }
@@ -50,9 +102,7 @@ body{
 
 @media (min-width: 992px) {
     
-    body{
-        background-color: rgb(235, 112, 12);
-    }
+    
     .container{
         max-width: 960px;
     }
@@ -61,11 +111,39 @@ body{
 
 @media (min-width: 1200px) {
     
-    body{
-        background-color: rgb(184, 19, 19);
-    }
+   
     .container{
         max-width: 1140px;
     }
+    header{
+        height: 120px;
+    }
+    #logo img{
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+    }
+    label{
+        display: none;
+    }
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+    }
 
+    nav ul li{
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a{
+        color: #343538;
+
+    }
+
+    nav ul li a:hover{
+        color: #c00000;
+    }
 }
