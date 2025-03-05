@@ -1,0 +1,38 @@
+/*
+
+Teste de Folha
+
+*/
+
+
+@media (min-width: 576px) {
+    
+    body{
+        background-color: blue;
+    }
+
+}
+
+@media (min-width: 768px) {
+    
+    body{
+        background-color: rgb(33, 196, 47);
+    }
+
+}
+
+@media (min-width: 992px) {
+    
+    body{
+        background-color: rgb(235, 112, 12);
+    }
+
+}
+
+@media (min-width: 1200px) {
+    
+    body{
+        background-color: rgb(184, 19, 19);
+    }
+
+}
