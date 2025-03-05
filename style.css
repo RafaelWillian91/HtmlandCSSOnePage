@@ -51,6 +51,8 @@ body{
     bottom: 10px;
 }
 
+/* SmartPhone Portrait */
+
 /* Cabeçalho */
 header{
     height: 60px;
@@ -72,7 +74,10 @@ header{
 
 label{
     font-size: 3em;
-    padding-right: 15px;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0,0,0,0.5);
 }
 
 nav ul{
@@ -149,12 +154,13 @@ main h2{
 .topicosSobre img{
     margin-right: 10px;
 }
+
+
 /* Smartphone LandScape */
 @media (min-width: 576px) {
     
-    
-    .container{
-        max-width: 540px;
+    .containe
+        max-width: 540p
     }
 
     /* Destaque */
